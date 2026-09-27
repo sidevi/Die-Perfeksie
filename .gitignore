@@ -1,6 +1,7 @@
-node_modules/
-.next/
-out/
-.env*.local
-build/
-dist/
+node_modules
+.next
+out
+build
+.env
+.env.local
+.DS_Store
