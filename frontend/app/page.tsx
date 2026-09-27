@@ -1,13 +1,13 @@
 import React from 'react';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Stats from './components/Stats';
-import Evidence from './components/Evidence';
-import Products from './components/Products';
-import Regimen from './components/Regimen';
-import ConsultationForm from './components/ConsultationForm';
-import Footer from './components/Footer';
+import Header from '../components/Header';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import Stats from '../components/Stats';
+import Evidence from '../components/Evidence';
+import Products from '../components/Products';
+import Regimen from '../components/Regimen';
+import ConsultationForm from '../components/ConsultationForm';
+import Footer from '../components/Footer';
 
 export default function Home(): React.JSX.Element {
   return (
