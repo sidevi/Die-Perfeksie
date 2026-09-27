@@ -1,23 +1,37 @@
 'use client';
 
 import React from 'react';
+import { MessageCircle } from 'lucide-react';
 
 export default function Footer(): React.JSX.Element {
   return (
     <footer className="bg-[#1C0A1C] text-stone-300 py-12 border-t border-amber-900/30">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <div className="flex items-center space-x-2 mb-4">
-            <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center font-serif text-sm font-bold text-white">
-              DP
-            </div>
+          <div className="flex items-center space-x-3 mb-4">
+            <img
+              src="/assets/logo.png"
+              alt="Die Perfeksie Hair Clinic Logo"
+              className="w-10 h-10 rounded-full object-cover border border-white/20"
+            />
             <span className="font-serif text-lg font-bold text-white tracking-tight">
               Die Perfeksie
             </span>
           </div>
           <p className="text-xs text-stone-400 leading-relaxed">
-            Advanced clinical trichology and therapeutic botanical formulations for Afro hair restoration.
+            Deals in wig making, wig revamping, hair cream, hair oil, hair therapy, and more.
           </p>
+          <div className="mt-4">
+            <a
+              href="https://wa.link/cspck8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#25D366] text-white text-xs px-3 py-2 rounded font-semibold hover:bg-[#20ba5a] transition-colors"
+            >
+              <MessageCircle className="w-4 h-4 fill-current" />
+              Chat on WhatsApp
+            </a>
+          </div>
         </div>
 
         <div>
@@ -31,19 +45,19 @@ export default function Footer(): React.JSX.Element {
         </div>
 
         <div>
-          <h5 className="text-xs font-bold uppercase tracking-wider text-white mb-3">Clinic Address</h5>
+          <h5 className="text-xs font-bold uppercase tracking-wider text-white mb-3">Clinic & Contact Info</h5>
           <p className="text-xs text-stone-400 leading-relaxed">
             Die Perfeksie Hair Clinic<br />
-            Victoria Island, Lagos, Nigeria<br />
-            Email: care@dieperfeksie.com<br />
-            Tel: +234 1 234 5678
+            Lagos, Nigeria<br />
+            Phone/WhatsApp: 08103613506<br />
+            Instagram: @di_eperfeksie
           </p>
         </div>
 
         <div>
           <h5 className="text-xs font-bold uppercase tracking-wider text-white mb-3">Newsletter</h5>
           <p className="text-xs text-stone-400 mb-3">
-            Subscribe for clinical research updates and trichology advice.
+            Subscribe for haircare updates and treatment advice.
           </p>
           <div className="flex">
             <input
