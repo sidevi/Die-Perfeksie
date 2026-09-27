@@ -5,46 +5,25 @@ import React from 'react';
 export default function Products(): React.JSX.Element {
   const products = [
     {
-      name: 'Nurture & Moringa Scalp Serum',
-      category: 'FOLLICULAR SERUM',
-      desc: 'Targeted scalp elixir for density restoration and follicle hydration.',
-      price: '₦24,500',
-      image: 'https://images.unsplash.com/photo-1608248597261-e4d0947c6b1e?q=80&w=400&auto=format&fit=crop'
+      name: 'Infused Hair Oil (100ml)',
+      category: 'HAIR & SCALP OIL',
+      desc: 'Formulated to reduce breakage, induce growth, prevent dandruff, and give natural shine to hair and scalp.',
+      price: 'Contact for Price',
+      image: '/assets/infused-oils.jpg'
     },
     {
-      name: 'Featherlight Growth Serum Concentrate',
-      category: 'DAILY DROPS',
-      desc: 'Lightweight botanical lipid complex that leaves zero greasy residue.',
-      price: '₦28,000',
-      image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400&auto=format&fit=crop'
+      name: 'Beard Oil for the Modern Gentleman (30ml)',
+      category: 'BEARD CARE',
+      desc: 'Helps reduce dryness and keeps your beard healthy, smooth, and well-groomed. Contains Avocado, Jojoba, Rosemary, and Amla.',
+      price: 'Contact for Price',
+      image: '/assets/beard-oil.jpg'
     },
     {
-      name: 'Clarifying Protein Scalp Polish',
-      category: 'EXFOLIANT MASQUE',
-      desc: 'Removes build-up and dead skin while preserving essential natural oils.',
-      price: '₦22,000',
-      image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=400&auto=format&fit=crop'
-    },
-    {
-      name: 'Scalp Detox & Root Essence Oil',
-      category: 'ROOT ELIXIR',
-      desc: 'Anti-inflammatory formulation designed for dry and itchy scalp relief.',
-      price: '₦21,500',
-      image: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?q=80&w=400&auto=format&fit=crop'
-    },
-    {
-      name: 'Chebe & Jelly Root Scalp Oil',
-      category: 'STRENGTHENING OIL',
-      desc: 'Traditional Sahelian botanical extract for length retention & anti-breakage.',
-      price: '₦26,000',
-      image: 'https://images.unsplash.com/photo-1617897903246-719242758050?q=80&w=400&auto=format&fit=crop'
-    },
-    {
-      name: 'Follicle Density Boosting Drops',
-      category: 'GROWTH SERUM',
-      desc: 'Clinical strength drop treatment targeting thinning crown and edges.',
-      price: '₦32,000',
-      image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400&auto=format&fit=crop'
+      name: 'Infused Hair Oil (70ml / 50ml / 30ml)',
+      category: 'TRAVEL SIZES',
+      desc: 'Compact sizes for everyday application. Apply to sectioned hair and massage thoroughly into scalp.',
+      price: 'Contact for Price',
+      image: '/assets/infused-oils.jpg'
     }
   ];
 
@@ -53,14 +32,14 @@ export default function Products(): React.JSX.Element {
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-2xl mb-12">
           <span className="text-xs font-semibold tracking-widest text-stone-500 uppercase">
-            FORMULATIONS & RESEARCH
+            OUR FORMULATIONS
           </span>
           <h2 className="font-serif text-3xl md:text-4xl font-normal text-[#2B0E2B] mt-2">
-            Precision Formulations for Follicular Health
+            Premium Hair & Beard Care Products
           </h2>
           <p className="text-stone-600 text-xs md:text-sm mt-3">
-            Therapeutic, plant-based treatments crafted to repair scalp micro-environments and 
-            strengthen Afro-textured hair shafts from root to tip.
+            Therapeutic, plant-based treatments crafted to nourish scalp environments and 
+            strengthen hair shafts from root to tip.
           </p>
         </div>
 
@@ -81,10 +60,15 @@ export default function Products(): React.JSX.Element {
               </div>
 
               <div className="px-6 pb-6 pt-2 flex items-center justify-between border-t border-stone-100">
-                <span className="font-serif font-bold text-stone-900 text-base">{p.price}</span>
-                <button className="bg-[#2B0E2B] text-white text-xs font-semibold px-4 py-2 rounded uppercase tracking-wider hover:bg-[#3D143D] transition-colors">
-                  Add to Cart
-                </button>
+                <span className="font-serif font-bold text-stone-900 text-sm">{p.price}</span>
+                <a
+                  href="https://wa.link/cspck8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#2B0E2B] text-white text-xs font-semibold px-4 py-2 rounded uppercase tracking-wider hover:bg-[#3D143D] transition-colors"
+                >
+                  Order on WhatsApp
+                </a>
               </div>
             </div>
           ))}
