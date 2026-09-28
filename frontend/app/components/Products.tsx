@@ -9,21 +9,21 @@ export default function Products(): React.JSX.Element {
       category: 'HAIR & SCALP OIL',
       desc: 'Formulated to reduce breakage, induce growth, prevent dandruff, and give natural shine to hair and scalp.',
       price: 'Contact for Price',
-      image: '/assets/infused-oils.jpg'
+      image: '/assets/2.jpg'
     },
     {
       name: 'Beard Oil for the Modern Gentleman (30ml)',
       category: 'BEARD CARE',
       desc: 'Helps reduce dryness and keeps your beard healthy, smooth, and well-groomed. Contains Avocado, Jojoba, Rosemary, and Amla.',
       price: 'Contact for Price',
-      image: '/assets/beard-oil.jpg'
+      image: '/assets/4.jpg'
     },
     {
       name: 'Infused Hair Oil (70ml / 50ml / 30ml)',
       category: 'TRAVEL SIZES',
       desc: 'Compact sizes for everyday application. Apply to sectioned hair and massage thoroughly into scalp.',
       price: 'Contact for Price',
-      image: '/assets/infused-oils.jpg'
+      image: '/assets/5.jpg'
     }
   ];
 

@@ -61,7 +61,7 @@ export default function Hero(): React.JSX.Element {
         <div className="lg:col-span-5 relative">
           <div className="relative rounded-lg overflow-hidden border border-stone-200 shadow-xl bg-stone-100">
             <img
-              src="/assets/founder.jpg"
+              src="/assets/1.jpg"
               alt="Die Perfeksie Hair Clinic Specialist"
               className="w-full h-[480px] object-cover"
             />

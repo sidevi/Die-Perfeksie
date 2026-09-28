@@ -7,28 +7,35 @@ export default function Evidence(): React.JSX.Element {
     <section className="py-16 bg-[#FAF8F5] border-b border-stone-200">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <div className="bg-white rounded border border-stone-200 overflow-hidden p-6">
-            <div className="text-[10px] font-bold tracking-wider text-stone-400 uppercase mb-2">
-              REAL PATIENT PROGRESS • 2024 TO 2026
+          {/* Real Patient Progress Card */}
+          <div className="bg-white rounded border border-stone-200 overflow-hidden p-6 flex flex-col justify-between">
+            <div>
+              <div className="text-[10px] font-bold tracking-wider text-stone-400 uppercase mb-2">
+                REAL PATIENT PROGRESS • 2024 TO 2026
+              </div>
+              <div className="bg-stone-50 w-full aspect-square rounded border border-stone-100 overflow-hidden relative my-4">
+                <img
+                  src="/assets/3.jpg"
+                  alt="Hair Growth Progress 2024 to 2026"
+                  className="w-full h-full object-contain"
+                />
+                <span className="absolute bottom-3 left-3 bg-[#2B0E2B] text-white text-[10px] font-medium px-2.5 py-1 rounded shadow-sm">
+                  2-YEAR TRANSFORMATION
+                </span>
+              </div>
             </div>
-            <div className="bg-stone-100 h-64 rounded overflow-hidden relative my-4">
-              <img
-                src="/assets/before-after.jpg"
-                alt="Hair Growth Progress 2024 to 2026"
-                className="w-full h-full object-cover"
-              />
-              <span className="absolute bottom-2 left-2 bg-[#2B0E2B] text-white text-[10px] px-2 py-0.5 rounded">
-                2-YEAR TRANSFORMATION
-              </span>
+
+            <div>
+              <h3 className="font-serif text-lg font-bold text-[#2B0E2B]">
+                Proven Follicular Regrowth & Retention
+              </h3>
+              <p className="text-xs text-stone-600 mt-2 leading-relaxed">
+                Documented hair restoration results using regular application of Die Perfeksie Infused Hair Oil over two years.
+              </p>
             </div>
-            <h3 className="font-serif text-lg font-bold text-[#2B0E2B]">
-              Proven Follicular Regrowth & Retention
-            </h3>
-            <p className="text-xs text-stone-600 mt-2 leading-relaxed">
-              Documented hair restoration results using regular application of Die Perfeksie Infused Hair Oil over two years.
-            </p>
           </div>
 
+          {/* Mission Quote Card */}
           <div className="bg-[#2B0E2B] text-white rounded p-8 flex flex-col justify-between">
             <div className="space-y-4">
               <span className="text-xs font-mono tracking-widest text-amber-200/70 uppercase">
@@ -42,7 +49,7 @@ export default function Evidence(): React.JSX.Element {
             <div className="flex items-center gap-3 pt-6 border-t border-amber-900/40">
               <div className="w-10 h-10 rounded-full bg-stone-300 overflow-hidden">
                 <img
-                  src="/assets/logo.png"
+                  src="/assets/logo.jpg"
                   alt="Die Perfeksie Logo"
                   className="w-full h-full object-cover"
                 />
@@ -55,6 +62,7 @@ export default function Evidence(): React.JSX.Element {
           </div>
         </div>
 
+        {/* Ingredients / Features Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div className="bg-white p-4 rounded border border-stone-200">
             <div className="text-xs font-bold text-[#2B0E2B]">Avocado & Jojoba Oil</div>
